@@ -1,0 +1,18 @@
+
+# Uncomment the next line to define a global platform for your project
+flutter_application_path = '../flutter_module'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+# 替换 Flutter 官方 Flutter.framework
+FileUtils.rm_r('../flutter_module/.ios/Flutter/engine/Flutter.framework', :force => true)
+FileUtils.cp_r('../../engine/src/out/ios_debug_sim_unopt/Flutter.framework', '../flutter_module/.ios/Flutter/engine/Flutter.framework')
+
+platform :ios, '9.0'
+
+target 'HybridiOSApp' do
+  install_all_flutter_pods(flutter_application_path)
+  use_frameworks!
+
+  # Pods for HybridiOSApp
+end
+

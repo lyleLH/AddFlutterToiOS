@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52AE80023FE95A0140885EA3 /* Pods_HybridiOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E6BCB3124E33FED93451D /* Pods_HybridiOSApp.framework */; };
+		6D15714424AAF4F9007B267D /* FlutterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D15714324AAF4F9007B267D /* FlutterManager.m */; };
+		6D15714924AB0B26007B267D /* FlutterManagerChannelModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D15714824AB0B26007B267D /* FlutterManagerChannelModifier.m */; };
+		6D15715624AB53E8007B267D /* FlutterMethodCallNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D15715524AB53E8007B267D /* FlutterMethodCallNative.m */; };
+		6DA8136C24A89FDA00CF1AFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8136B24A89FDA00CF1AFD /* AppDelegate.m */; };
+		6DA8136F24A89FDA00CF1AFD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8136E24A89FDA00CF1AFD /* SceneDelegate.m */; };
+		6DA8137224A89FDA00CF1AFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8137124A89FDA00CF1AFD /* ViewController.m */; };
+		6DA8137524A89FDA00CF1AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8137324A89FDA00CF1AFD /* Main.storyboard */; };
+		6DA8137724A89FDB00CF1AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8137624A89FDB00CF1AFD /* Assets.xcassets */; };
+		6DA8137A24A89FDB00CF1AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8137824A89FDB00CF1AFD /* LaunchScreen.storyboard */; };
+		6DA8137D24A89FDB00CF1AFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8137C24A89FDB00CF1AFD /* main.m */; };
+		6DA8138724A89FDB00CF1AFD /* HybridiOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8138624A89FDB00CF1AFD /* HybridiOSAppTests.m */; };
+		6DA8139224A89FDB00CF1AFD /* HybridiOSAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8139124A89FDB00CF1AFD /* HybridiOSAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DA8138324A89FDB00CF1AFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DA8135F24A89FDA00CF1AFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA8136624A89FDA00CF1AFD;
+			remoteInfo = HybridiOSApp;
+		};
+		6DA8138E24A89FDB00CF1AFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DA8135F24A89FDA00CF1AFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA8136624A89FDA00CF1AFD;
+			remoteInfo = HybridiOSApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		347E4FC2FEDAFEDECEE31AA8 /* Pods-HybridiOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridiOSApp.debug.xcconfig"; path = "Target Support Files/Pods-HybridiOSApp/Pods-HybridiOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6D15714224AAF4F9007B267D /* FlutterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterManager.h; sourceTree = "<group>"; };
+		6D15714324AAF4F9007B267D /* FlutterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterManager.m; sourceTree = "<group>"; };
+		6D15714724AB0B26007B267D /* FlutterManagerChannelModifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterManagerChannelModifier.h; sourceTree = "<group>"; };
+		6D15714824AB0B26007B267D /* FlutterManagerChannelModifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterManagerChannelModifier.m; sourceTree = "<group>"; };
+		6D15715424AB53E8007B267D /* FlutterMethodCallNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterMethodCallNative.h; sourceTree = "<group>"; };
+		6D15715524AB53E8007B267D /* FlutterMethodCallNative.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterMethodCallNative.m; sourceTree = "<group>"; };
+		6DA8136724A89FDA00CF1AFD /* HybridiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA8136A24A89FDA00CF1AFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DA8136B24A89FDA00CF1AFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DA8136D24A89FDA00CF1AFD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		6DA8136E24A89FDA00CF1AFD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		6DA8137024A89FDA00CF1AFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DA8137124A89FDA00CF1AFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DA8137424A89FDA00CF1AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DA8137624A89FDB00CF1AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DA8137924A89FDB00CF1AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DA8137B24A89FDB00CF1AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA8137C24A89FDB00CF1AFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DA8138224A89FDB00CF1AFD /* HybridiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybridiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA8138624A89FDB00CF1AFD /* HybridiOSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridiOSAppTests.m; sourceTree = "<group>"; };
+		6DA8138824A89FDB00CF1AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA8138D24A89FDB00CF1AFD /* HybridiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybridiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA8139124A89FDB00CF1AFD /* HybridiOSAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridiOSAppUITests.m; sourceTree = "<group>"; };
+		6DA8139324A89FDB00CF1AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D62A96688345EA46B8EACBF0 /* Pods-HybridiOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridiOSApp.release.xcconfig"; path = "Target Support Files/Pods-HybridiOSApp/Pods-HybridiOSApp.release.xcconfig"; sourceTree = "<group>"; };
+		DE3E6BCB3124E33FED93451D /* Pods_HybridiOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HybridiOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DA8136424A89FDA00CF1AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AE80023FE95A0140885EA3 /* Pods_HybridiOSApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8137F24A89FDB00CF1AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8138A24A89FDB00CF1AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69A5699C0467AA9FAC8E7EA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				347E4FC2FEDAFEDECEE31AA8 /* Pods-HybridiOSApp.debug.xcconfig */,
+				D62A96688345EA46B8EACBF0 /* Pods-HybridiOSApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D15714524AB0182007B267D /* FlutterManager */ = {
+			isa = PBXGroup;
+			children = (
+				6D15714224AAF4F9007B267D /* FlutterManager.h */,
+				6D15714324AAF4F9007B267D /* FlutterManager.m */,
+				6D15714724AB0B26007B267D /* FlutterManagerChannelModifier.h */,
+				6D15714824AB0B26007B267D /* FlutterManagerChannelModifier.m */,
+				6D15715424AB53E8007B267D /* FlutterMethodCallNative.h */,
+				6D15715524AB53E8007B267D /* FlutterMethodCallNative.m */,
+			);
+			path = FlutterManager;
+			sourceTree = "<group>";
+		};
+		6DA8135E24A89FDA00CF1AFD = {
+			isa = PBXGroup;
+			children = (
+				6DA8136924A89FDA00CF1AFD /* HybridiOSApp */,
+				6DA8138524A89FDB00CF1AFD /* HybridiOSAppTests */,
+				6DA8139024A89FDB00CF1AFD /* HybridiOSAppUITests */,
+				6DA8136824A89FDA00CF1AFD /* Products */,
+				69A5699C0467AA9FAC8E7EA2 /* Pods */,
+				6E5BA3E2C0179A5AC1FAFE09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DA8136824A89FDA00CF1AFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8136724A89FDA00CF1AFD /* HybridiOSApp.app */,
+				6DA8138224A89FDB00CF1AFD /* HybridiOSAppTests.xctest */,
+				6DA8138D24A89FDB00CF1AFD /* HybridiOSAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DA8136924A89FDA00CF1AFD /* HybridiOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8136A24A89FDA00CF1AFD /* AppDelegate.h */,
+				6DA8136B24A89FDA00CF1AFD /* AppDelegate.m */,
+				6DA8136D24A89FDA00CF1AFD /* SceneDelegate.h */,
+				6DA8136E24A89FDA00CF1AFD /* SceneDelegate.m */,
+				6DA8137024A89FDA00CF1AFD /* ViewController.h */,
+				6DA8137124A89FDA00CF1AFD /* ViewController.m */,
+				6D15714524AB0182007B267D /* FlutterManager */,
+				6DA8137324A89FDA00CF1AFD /* Main.storyboard */,
+				6DA8137624A89FDB00CF1AFD /* Assets.xcassets */,
+				6DA8137824A89FDB00CF1AFD /* LaunchScreen.storyboard */,
+				6DA8137B24A89FDB00CF1AFD /* Info.plist */,
+				6DA8137C24A89FDB00CF1AFD /* main.m */,
+			);
+			path = HybridiOSApp;
+			sourceTree = "<group>";
+		};
+		6DA8138524A89FDB00CF1AFD /* HybridiOSAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8138624A89FDB00CF1AFD /* HybridiOSAppTests.m */,
+				6DA8138824A89FDB00CF1AFD /* Info.plist */,
+			);
+			path = HybridiOSAppTests;
+			sourceTree = "<group>";
+		};
+		6DA8139024A89FDB00CF1AFD /* HybridiOSAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8139124A89FDB00CF1AFD /* HybridiOSAppUITests.m */,
+				6DA8139324A89FDB00CF1AFD /* Info.plist */,
+			);
+			path = HybridiOSAppUITests;
+			sourceTree = "<group>";
+		};
+		6E5BA3E2C0179A5AC1FAFE09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E6BCB3124E33FED93451D /* Pods_HybridiOSApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DA8136624A89FDA00CF1AFD /* HybridiOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA8139624A89FDB00CF1AFD /* Build configuration list for PBXNativeTarget "HybridiOSApp" */;
+			buildPhases = (
+				0CB3E79E369F744257242BCD /* [CP] Check Pods Manifest.lock */,
+				39FC8BF5CC6B9B6AE07C681E /* [CP-User] Run Flutter Build Script */,
+				6DA8136324A89FDA00CF1AFD /* Sources */,
+				6DA8136424A89FDA00CF1AFD /* Frameworks */,
+				6DA8136524A89FDA00CF1AFD /* Resources */,
+				0B904EE919FC963767C01E38 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HybridiOSApp;
+			productName = HybridiOSApp;
+			productReference = 6DA8136724A89FDA00CF1AFD /* HybridiOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DA8138124A89FDB00CF1AFD /* HybridiOSAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA8139924A89FDB00CF1AFD /* Build configuration list for PBXNativeTarget "HybridiOSAppTests" */;
+			buildPhases = (
+				6DA8137E24A89FDB00CF1AFD /* Sources */,
+				6DA8137F24A89FDB00CF1AFD /* Frameworks */,
+				6DA8138024A89FDB00CF1AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA8138424A89FDB00CF1AFD /* PBXTargetDependency */,
+			);
+			name = HybridiOSAppTests;
+			productName = HybridiOSAppTests;
+			productReference = 6DA8138224A89FDB00CF1AFD /* HybridiOSAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DA8138C24A89FDB00CF1AFD /* HybridiOSAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA8139C24A89FDB00CF1AFD /* Build configuration list for PBXNativeTarget "HybridiOSAppUITests" */;
+			buildPhases = (
+				6DA8138924A89FDB00CF1AFD /* Sources */,
+				6DA8138A24A89FDB00CF1AFD /* Frameworks */,
+				6DA8138B24A89FDB00CF1AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA8138F24A89FDB00CF1AFD /* PBXTargetDependency */,
+			);
+			name = HybridiOSAppUITests;
+			productName = HybridiOSAppUITests;
+			productReference = 6DA8138D24A89FDB00CF1AFD /* HybridiOSAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DA8135F24A89FDA00CF1AFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = neotv;
+				TargetAttributes = {
+					6DA8136624A89FDA00CF1AFD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					6DA8138124A89FDB00CF1AFD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6DA8136624A89FDA00CF1AFD;
+					};
+					6DA8138C24A89FDB00CF1AFD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6DA8136624A89FDA00CF1AFD;
+					};
+				};
+			};
+			buildConfigurationList = 6DA8136224A89FDA00CF1AFD /* Build configuration list for PBXProject "HybridiOSApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DA8135E24A89FDA00CF1AFD;
+			productRefGroup = 6DA8136824A89FDA00CF1AFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DA8136624A89FDA00CF1AFD /* HybridiOSApp */,
+				6DA8138124A89FDB00CF1AFD /* HybridiOSAppTests */,
+				6DA8138C24A89FDB00CF1AFD /* HybridiOSAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DA8136524A89FDA00CF1AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA8137A24A89FDB00CF1AFD /* LaunchScreen.storyboard in Resources */,
+				6DA8137724A89FDB00CF1AFD /* Assets.xcassets in Resources */,
+				6DA8137524A89FDA00CF1AFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8138024A89FDB00CF1AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8138B24A89FDB00CF1AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B904EE919FC963767C01E38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HybridiOSApp/Pods-HybridiOSApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HybridiOSApp/Pods-HybridiOSApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HybridiOSApp/Pods-HybridiOSApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CB3E79E369F744257242BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HybridiOSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39FC8BF5CC6B9B6AE07C681E /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../flutter_module/.metadata",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DA8136324A89FDA00CF1AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA8137224A89FDA00CF1AFD /* ViewController.m in Sources */,
+				6DA8136C24A89FDA00CF1AFD /* AppDelegate.m in Sources */,
+				6D15714424AAF4F9007B267D /* FlutterManager.m in Sources */,
+				6D15714924AB0B26007B267D /* FlutterManagerChannelModifier.m in Sources */,
+				6D15715624AB53E8007B267D /* FlutterMethodCallNative.m in Sources */,
+				6DA8137D24A89FDB00CF1AFD /* main.m in Sources */,
+				6DA8136F24A89FDA00CF1AFD /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8137E24A89FDB00CF1AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA8138724A89FDB00CF1AFD /* HybridiOSAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8138924A89FDB00CF1AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA8139224A89FDB00CF1AFD /* HybridiOSAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DA8138424A89FDB00CF1AFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DA8136624A89FDA00CF1AFD /* HybridiOSApp */;
+			targetProxy = 6DA8138324A89FDB00CF1AFD /* PBXContainerItemProxy */;
+		};
+		6DA8138F24A89FDB00CF1AFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DA8136624A89FDA00CF1AFD /* HybridiOSApp */;
+			targetProxy = 6DA8138E24A89FDB00CF1AFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DA8137324A89FDA00CF1AFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA8137424A89FDA00CF1AFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DA8137824A89FDB00CF1AFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA8137924A89FDB00CF1AFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DA8139424A89FDB00CF1AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DA8139524A89FDB00CF1AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DA8139724A89FDB00CF1AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347E4FC2FEDAFEDECEE31AA8 /* Pods-HybridiOSApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HybridiOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianjingquan.HybridiOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DA8139824A89FDB00CF1AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62A96688345EA46B8EACBF0 /* Pods-HybridiOSApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HybridiOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianjingquan.HybridiOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DA8139A24A89FDB00CF1AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HybridiOSAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianjingquan.HybridiOSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybridiOSApp.app/HybridiOSApp";
+			};
+			name = Debug;
+		};
+		6DA8139B24A89FDB00CF1AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HybridiOSAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianjingquan.HybridiOSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybridiOSApp.app/HybridiOSApp";
+			};
+			name = Release;
+		};
+		6DA8139D24A89FDB00CF1AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HybridiOSAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianjingquan.HybridiOSAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HybridiOSApp;
+			};
+			name = Debug;
+		};
+		6DA8139E24A89FDB00CF1AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HybridiOSAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianjingquan.HybridiOSAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HybridiOSApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DA8136224A89FDA00CF1AFD /* Build configuration list for PBXProject "HybridiOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA8139424A89FDB00CF1AFD /* Debug */,
+				6DA8139524A89FDB00CF1AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA8139624A89FDB00CF1AFD /* Build configuration list for PBXNativeTarget "HybridiOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA8139724A89FDB00CF1AFD /* Debug */,
+				6DA8139824A89FDB00CF1AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA8139924A89FDB00CF1AFD /* Build configuration list for PBXNativeTarget "HybridiOSAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA8139A24A89FDB00CF1AFD /* Debug */,
+				6DA8139B24A89FDB00CF1AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA8139C24A89FDB00CF1AFD /* Build configuration list for PBXNativeTarget "HybridiOSAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA8139D24A89FDB00CF1AFD /* Debug */,
+				6DA8139E24A89FDB00CF1AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DA8135F24A89FDA00CF1AFD /* Project object */;
+}
