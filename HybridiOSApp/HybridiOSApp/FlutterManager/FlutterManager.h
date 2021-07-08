@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) FlutterMethodChannel *methodChannel;
 
+@property (nonatomic, strong, readonly) FlutterBasicMessageChannel *messageChannel;
+
 @property (nonatomic, strong, nullable) id<FlutterManagerChannelModifier> channelsModifier;
 
 // 注入通信

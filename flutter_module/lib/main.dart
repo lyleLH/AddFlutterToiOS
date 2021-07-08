@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -27,30 +29,23 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
-  MethodChannel methodChannel = const MethodChannel('com.zsy/hybrid');
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-
-    methodChannel.invokeMethod('sayHi', "你好");
-    methodChannel.invokeMethod('sayError', 520.0);
-  }
+  //初始化
+  BasicMessageChannel basicMessageChannel = BasicMessageChannel(
+    "com.zsy/hybrid.messagechannelname",
+    JSONMessageCodec(),
+  );
 
   @override
   void initState() {
     super.initState();
-
-    methodChannel.setMethodCallHandler((call) {
-      if (call.method == 'sayHello') {
-        print('sayHello');
+    //设定回调
+    basicMessageChannel.setMessageHandler((message) async {
+      try {
+        print("\nflutter side recieved :\n${message.toString()}");
+      } catch (error) {
+        print(error.toString());
       }
-      if (call.method == 'sayOK') {
-        print('sayOK');
-      }
-      return null;
+      return "Good";
     });
   }
 
@@ -80,5 +75,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.add),
       ),
     );
+  }
+
+  Future<void> _incrementCounter() async {
+    setState(() {
+      _counter++;
+    });
+    //call native 处理响应 如果有的话
+    try {
+      var response =
+          await basicMessageChannel.send({"flutter1": "1", "flutter2": "2"});
+      print("flutter call native callbacked\n :${response.toString()}");
+    } catch (error) {
+      print(error.toString());
+    }
   }
 }

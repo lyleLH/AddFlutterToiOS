@@ -15,6 +15,7 @@
 @property (nonatomic, strong) FlutterViewController *controller;
 
 @property (nonatomic, strong) FlutterMethodChannel *methodChannel;
+@property (nonatomic, strong) FlutterBasicMessageChannel *messageChannel;
 ///< 记录通信方法
 @property (nonatomic, strong) NSMutableArray *recordMethods;
 
@@ -40,16 +41,13 @@
         // 初始化 controller
         self.controller = [[FlutterViewController alloc] initWithEngine:self.engine nibName:nil bundle:nil];
         
-        // 加载通信方法
+ 
         self.recordMethods = @[].mutableCopy;
         
-        /** 单次通信 */
-        //    FlutterMethodChannel
-        /** 持续通信 */
-        //    FlutterBasicMessageChannel
-        //    FlutterEventChannel
-        
-        self.methodChannel = [FlutterMethodChannel methodChannelWithName:@"com.zsy/hybrid" binaryMessenger:self.controller];
+ 
+        self.methodChannel = [FlutterMethodChannel methodChannelWithName:@"com.zsy/hybrid" binaryMessenger:self.controller]
+        ;
+        self.messageChannel = [FlutterBasicMessageChannel messageChannelWithName:@"com.zsy/hybrid.messagechannelname" binaryMessenger:self.controller codec:[FlutterJSONMessageCodec new]];
     }
     return self;
 }
@@ -74,6 +72,14 @@
                 }
             }
         }];
+    }];
+    
+    [self.messageChannel setMessageHandler:^(id  _Nullable message, FlutterReply  _Nonnull callback) {
+        NSLog(@"native side recieved :\n%@",message);
+        callback(@{@"code":@"0",
+                   @"msg":@"success",
+                   @"data" : @{}
+                 });
     }];
 }
 
