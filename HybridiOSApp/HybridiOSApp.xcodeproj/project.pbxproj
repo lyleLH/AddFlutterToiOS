@@ -20,6 +20,7 @@
 		6DA8137D24A89FDB00CF1AFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8137C24A89FDB00CF1AFD /* main.m */; };
 		6DA8138724A89FDB00CF1AFD /* HybridiOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8138624A89FDB00CF1AFD /* HybridiOSAppTests.m */; };
 		6DA8139224A89FDB00CF1AFD /* HybridiOSAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8139124A89FDB00CF1AFD /* HybridiOSAppUITests.m */; };
+		C8DCA50B2697EBDE009D13DD /* YKFlutterBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCA50A2697EBDE009D13DD /* YKFlutterBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,9 @@
 		6DA8138D24A89FDB00CF1AFD /* HybridiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybridiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA8139124A89FDB00CF1AFD /* HybridiOSAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridiOSAppUITests.m; sourceTree = "<group>"; };
 		6DA8139324A89FDB00CF1AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8DCA5092697EBDE009D13DD /* YKFlutterBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKFlutterBridge.h; sourceTree = "<group>"; };
+		C8DCA50A2697EBDE009D13DD /* YKFlutterBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKFlutterBridge.m; sourceTree = "<group>"; };
+		C8DCA50D2697F059009D13DD /* YKFlutterBridgeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKFlutterBridgeInterface.h; sourceTree = "<group>"; };
 		D62A96688345EA46B8EACBF0 /* Pods-HybridiOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridiOSApp.release.xcconfig"; path = "Target Support Files/Pods-HybridiOSApp/Pods-HybridiOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		DE3E6BCB3124E33FED93451D /* Pods_HybridiOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HybridiOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +152,7 @@
 				6DA8136E24A89FDA00CF1AFD /* SceneDelegate.m */,
 				6DA8137024A89FDA00CF1AFD /* ViewController.h */,
 				6DA8137124A89FDA00CF1AFD /* ViewController.m */,
+				C8DCA5082697EBB2009D13DD /* FlutterBridge */,
 				6D15714524AB0182007B267D /* FlutterManager */,
 				6DA8137324A89FDA00CF1AFD /* Main.storyboard */,
 				6DA8137624A89FDB00CF1AFD /* Assets.xcassets */,
@@ -182,6 +187,16 @@
 				DE3E6BCB3124E33FED93451D /* Pods_HybridiOSApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8DCA5082697EBB2009D13DD /* FlutterBridge */ = {
+			isa = PBXGroup;
+			children = (
+				C8DCA5092697EBDE009D13DD /* YKFlutterBridge.h */,
+				C8DCA50A2697EBDE009D13DD /* YKFlutterBridge.m */,
+				C8DCA50D2697F059009D13DD /* YKFlutterBridgeInterface.h */,
+			);
+			path = FlutterBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +387,7 @@
 				6DA8137224A89FDA00CF1AFD /* ViewController.m in Sources */,
 				6DA8136C24A89FDA00CF1AFD /* AppDelegate.m in Sources */,
 				6D15714424AAF4F9007B267D /* FlutterManager.m in Sources */,
+				C8DCA50B2697EBDE009D13DD /* YKFlutterBridge.m in Sources */,
 				6D15714924AB0B26007B267D /* FlutterManagerChannelModifier.m in Sources */,
 				6D15715624AB53E8007B267D /* FlutterMethodCallNative.m in Sources */,
 				6DA8137D24A89FDB00CF1AFD /* main.m in Sources */,
